@@ -11,7 +11,7 @@ export async function checkoutSessionAction(cartId:string,details:string|undefin
       
     }
        const token=await getUserToken()
-    const response=await fetch(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=http://localhost:3000`,{
+    const response=await fetch(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=https://shop-mart-beta.vercel.app`,{
       method:"POST",
       body:JSON.stringify({shippingAddress}),
       headers:{
