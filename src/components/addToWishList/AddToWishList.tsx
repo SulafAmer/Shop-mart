@@ -8,7 +8,7 @@ import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
 
 
-export default function AddToWishList(productId:string) {
+export default function AddToWishList({productId}:{productId:string}) {
   const session=useSession()
     const router=useRouter()
    async function addProductToWishlist() {

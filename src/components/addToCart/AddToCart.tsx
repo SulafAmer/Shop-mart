@@ -16,7 +16,7 @@ export default function AddToCart({productId}:{productId:string}) {
   async function addProductToCart() {
     if(session.status=="authenticated"){
         setisLoading(true)
-        const data=await addToCartAction(productId)
+        const data=await addToCartAction({productId})
         data.status=="success"&&toast.success("Product added successfully to cart")
         setCartData(data)
         await getCart()

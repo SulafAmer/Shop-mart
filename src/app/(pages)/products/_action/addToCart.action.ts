@@ -2,7 +2,7 @@
 
 import { getUserToken } from "@/app/Helpers/getUserToken"
 
-export async function addToCartAction(productId:string){
+export async function addToCartAction({productId}:{productId:string}){
        const token=await getUserToken()
 
     const response=await fetch("https://ecommerce.routemisr.com/api/v1/cart",{
