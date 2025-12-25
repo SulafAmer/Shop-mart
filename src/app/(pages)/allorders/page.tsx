@@ -14,7 +14,7 @@ import { getUserIdAction } from './_action/ordersActions.action'
 
 
 export default function AllOrders() {
-  const [ordersData, setOrdersData] = useState<OrderI[]>([])
+  const [ordersData, setOrdersData] = useState<OrderI[]|null>(null)
   const [isLoading, setIsLoading] = useState(false)
   
   async function getUserOrders(){
@@ -55,7 +55,7 @@ useEffect(() => {
       <div className="">
         <h4 className="mb-4 text-md leading-none font-medium"> Order items</h4>
         <Separator/>
-        {order.cartItems.map((item) => (
+        {order?.cartItems?.map((item) => (
           <React.Fragment key={item._id}>
             <div className='flex my-3  items-center'>
             <div className='h-[100px] w-[100px]'>
