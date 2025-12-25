@@ -66,7 +66,7 @@ export default function CheckOut({cartId}:{cartId:string}) {
       <Dialog>
       <form>
         <DialogTrigger asChild>
-          <Button className='w-full text-lg mt-4' variant="outline">Proceed to checkout</Button>
+          <Button className='w-full text-lg mt-4 cursor-pointer' variant="outline">Proceed to checkout</Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
@@ -93,8 +93,8 @@ export default function CheckOut({cartId}:{cartId:string}) {
             <DialogClose asChild>
               <Button variant="outline">Cancel</Button>
             </DialogClose>
-            <Button type="submit" onClick={()=>checkOutSession()}>Visa</Button>
-            <Button type="submit" onClick={()=>cashOrder()}>Cash</Button>
+            <Button type="submit" className=' cursor-pointer' onClick={()=>checkOutSession()}>Visa</Button>
+            <Button type="submit" className=' cursor-pointer' onClick={()=>cashOrder()}>Cash</Button>
 
           </DialogFooter>
         </DialogContent>

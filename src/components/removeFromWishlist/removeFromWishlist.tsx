@@ -27,7 +27,7 @@ export default function RemoveFromWishlist({
   }
 
   return <>
-  <button onClick={()=>removeWishlistItem(productId)}>
+  <button className=' cursor-pointer' onClick={()=>removeWishlistItem(productId)}>
 
   <HeartOffIcon/>
   </button>

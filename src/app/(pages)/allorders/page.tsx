@@ -49,7 +49,7 @@ useEffect(() => {
     <p className=' p-1'>{order.shippingAddress.details}, {order.shippingAddress.city}</p>
     <p className=' p-1'>Phone: {order.shippingAddress.phone} </p>
     <Popover>
-   <PopoverTrigger className='bg-gray-200 py-2 px-4 font-semibold mt-4 rounded-sm'>View order items</PopoverTrigger>
+   <PopoverTrigger className='bg-gray-200 py-2 cursor-pointer px-4 font-semibold mt-4 rounded-sm'>View order items</PopoverTrigger>
    <PopoverContent className='w-80 md:w-160 h-90 absolute -top-97 -left-20 md:-top-97'>
     <ScrollArea className="p-5 h-85  md:w-150 rounded-md">
       <div className="">

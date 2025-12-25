@@ -79,7 +79,7 @@ export default function Profile() {
       <Dialog>
       <form>
         <DialogTrigger asChild>
-          <Button className='w-full text-lg' variant="outline">Add address</Button>
+          <Button className='w-full text-lg cursor-pointer' variant="outline">Add address</Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
@@ -108,9 +108,9 @@ export default function Profile() {
           </div>
           <DialogFooter>
             <DialogClose asChild>
-              <Button variant="outline">Cancel</Button>
+              <Button className=' cursor-pointer' variant="outline">Cancel</Button>
             </DialogClose>
-            <Button type="submit" onClick={()=>addAddress()}>Add</Button>
+            <Button className=' cursor-pointer' type="submit" onClick={()=>addAddress()}>Add</Button>
           </DialogFooter>
         </DialogContent>
       </form>

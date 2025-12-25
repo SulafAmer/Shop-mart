@@ -21,7 +21,7 @@ export default function AddToWishList({productId}:{productId:string}) {
    }
 
   return <>
-  <button onClick={addProductToWishlist}>
+  <button className=' cursor-pointer' onClick={addProductToWishlist}>
     <HeartIcon/>
     
   </button>

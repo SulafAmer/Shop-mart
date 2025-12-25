@@ -118,11 +118,11 @@ useEffect(() => {
                     </div>
                      <CheckOut cartId={cartData?.cartId!}/>
                      <Link href={"/products"}>
-                    <Button className='w-full text-lg mt-2'>Continue shopping</Button>
+                    <Button className='w-full cursor-pointer text-lg mt-2'>Continue shopping</Button>
                      </Link>
 
                   </div>
-                  <Button variant={"outline"} className='mt-2 ms-auto text-destructive hover:text-destructive flex' onClick={()=>{clearCart()}}>{isClearing?<Loader2 className='animate-spin'/>:<Trash2/>}Clear cart</Button>
+                  <Button variant={"outline"} className='mt-2 ms-auto text-destructive cursor-pointer hover:text-destructive flex' onClick={()=>{clearCart()}}>{isClearing?<Loader2 className='animate-spin'/>:<Trash2/>}Clear cart</Button>
 
                 </div>
               </div>
